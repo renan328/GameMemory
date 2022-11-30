@@ -119,7 +119,7 @@
             this.lbl_contador.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_contador.AutoSize = true;
             this.lbl_contador.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_contador.ForeColor = System.Drawing.Color.White;
+            this.lbl_contador.ForeColor = System.Drawing.Color.Black;
             this.lbl_contador.Location = new System.Drawing.Point(684, 37);
             this.lbl_contador.Name = "lbl_contador";
             this.lbl_contador.Size = new System.Drawing.Size(138, 39);
@@ -131,7 +131,7 @@
             this.lbl_tempo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_tempo.AutoSize = true;
             this.lbl_tempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tempo.ForeColor = System.Drawing.Color.White;
+            this.lbl_tempo.ForeColor = System.Drawing.Color.Black;
             this.lbl_tempo.Location = new System.Drawing.Point(548, 36);
             this.lbl_tempo.Name = "lbl_tempo";
             this.lbl_tempo.Size = new System.Drawing.Size(130, 39);
@@ -495,7 +495,7 @@
             this.lbl_acertosFixo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbl_acertosFixo.AutoSize = true;
             this.lbl_acertosFixo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_acertosFixo.ForeColor = System.Drawing.Color.White;
+            this.lbl_acertosFixo.ForeColor = System.Drawing.Color.Black;
             this.lbl_acertosFixo.Location = new System.Drawing.Point(346, 673);
             this.lbl_acertosFixo.Name = "lbl_acertosFixo";
             this.lbl_acertosFixo.Size = new System.Drawing.Size(325, 39);
@@ -507,7 +507,7 @@
             this.lbl_acertos.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbl_acertos.AutoSize = true;
             this.lbl_acertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_acertos.ForeColor = System.Drawing.Color.White;
+            this.lbl_acertos.ForeColor = System.Drawing.Color.Black;
             this.lbl_acertos.Location = new System.Drawing.Point(686, 673);
             this.lbl_acertos.Name = "lbl_acertos";
             this.lbl_acertos.Size = new System.Drawing.Size(108, 39);
@@ -532,7 +532,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1231, 749);
             this.ControlBox = false;
             this.Controls.Add(this.btn_sair);

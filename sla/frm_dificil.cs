@@ -17,9 +17,7 @@ namespace sla
         Random rand = new Random();
         Timer clickTimer = new Timer();
         int tempo = 100, pares, tempoGasto;
-        Timer timer = new Timer { Interval = 1000 };
-   
-        
+        Timer timer = new Timer { Interval = 100 };
 
 
         public frm_dificil()
@@ -69,8 +67,9 @@ namespace sla
                 if (tempo < 0)
                 {
                     timer.Stop();
-                    // mostrar um form de perder
-                    MessageBox.Show("Acabou seu tempo");
+                    frm_perder frm_Perder = new frm_perder(pares);
+                    frm_Perder.Show();
+                    this.Close();
                     pares = 0;
                     tempo = 0;
                     lbl_contador.Text = "00: 00";

@@ -36,13 +36,15 @@ namespace sla
             this.btn_comecar = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
             this.btn_informacoes = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_titulo
             // 
             resources.ApplyResources(this.lbl_titulo, "lbl_titulo");
-            this.lbl_titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
-            this.lbl_titulo.ForeColor = System.Drawing.SystemColors.Window;
+            this.lbl_titulo.BackColor = System.Drawing.Color.White;
+            this.lbl_titulo.ForeColor = System.Drawing.Color.Black;
             this.lbl_titulo.Name = "lbl_titulo";
             // 
             // txt_nomeUsuario
@@ -56,7 +58,7 @@ namespace sla
             // lbl_digiteNome
             // 
             resources.ApplyResources(this.lbl_digiteNome, "lbl_digiteNome");
-            this.lbl_digiteNome.ForeColor = System.Drawing.SystemColors.Window;
+            this.lbl_digiteNome.ForeColor = System.Drawing.Color.Black;
             this.lbl_digiteNome.Name = "lbl_digiteNome";
             // 
             // btn_comecar
@@ -89,11 +91,19 @@ namespace sla
             this.btn_informacoes.UseVisualStyleBackColor = false;
             this.btn_informacoes.Click += new System.EventHandler(this.btn_informacoes_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sla.Properties.Resources.logo;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_inicio
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_informacoes);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_comecar);
@@ -104,6 +114,7 @@ namespace sla
             this.Name = "frm_inicio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_inicio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +128,6 @@ namespace sla
         private System.Windows.Forms.Button btn_comecar;
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Button btn_informacoes;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

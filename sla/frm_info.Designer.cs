@@ -45,7 +45,7 @@ namespace sla
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 2);
+            this.label1.Location = new System.Drawing.Point(214, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 40);
             this.label1.TabIndex = 0;
@@ -56,15 +56,17 @@ namespace sla
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 42);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(34, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(614, 168);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Na tela de jogo, ao clicar no botão começar, o \r\ntempo ira começar e as imagens s" +
-    "erão carregadas, \r\nclique nelas e tente achar o seu respectivo par,\r\nao achar, o" +
-    " par de imagens ira sumir.\r\n\r\n\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Text = "\r\nNa tela de jogo, ao clicar no botão começar, o \r\ntempo ira começar e as imagens" +
+    " serão carregadas, \r\nclique nelas e tente achar o seu respectivo par,\r\nao achar," +
+    " o par de imagens ira sumir.\r\n\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label3
             // 
