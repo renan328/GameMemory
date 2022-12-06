@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sla.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,12 +26,16 @@ namespace sla
                int height
            );
 
-        frm_dificil frm_Dificil = new frm_dificil();
-        public frm_ganhar(int tempoGasto)
+        JogadorDTO jogador = new JogadorDTO();
+        public frm_ganhar(int tempoGasto, string Nome)
         {
             InitializeComponent();
             lbl_tempo.Text = tempoGasto + " segundos";
-            
+            jogador.Nome = Nome;
+            jogador.Tempo = tempoGasto.ToString();
+
+            MessageBox.Show(jogador.Nome);
+
         }
 
         private void btn_jogarNovamente_Click(object sender, EventArgs e)
@@ -42,6 +47,12 @@ namespace sla
         {
             brn_rank.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, brn_rank.Width, brn_rank.Height, 50, 50));
             btn_jogarNovamente.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_jogarNovamente.Width, btn_jogarNovamente.Height, 50, 50));
+        }
+
+        private void brn_rank_Click(object sender, EventArgs e)
+        {
+            frm_ranking frm_Ranking = new frm_ranking();
+            frm_Ranking.Show();
         }
     }
 }

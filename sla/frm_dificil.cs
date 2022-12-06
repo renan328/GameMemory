@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sla.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,10 +30,14 @@ namespace sla
         Random rand = new Random();
         Timer clickTimer = new Timer();
         int tempo = 100, pares, tempoGasto;
+        string Nome;
 
-        public frm_dificil()
+       
+        public frm_dificil(string Nome)
         {
             InitializeComponent();
+            this.Nome = Nome;
+            lbl_nomeJogador.Text = Nome;
         }
 
         private PictureBox[] pictureBoxes
@@ -151,7 +156,7 @@ namespace sla
             
                 pares = 0;
                 timer.Stop();
-                frm_ganhar frm_Ganhar = new frm_ganhar(tempoGasto);
+                frm_ganhar frm_Ganhar = new frm_ganhar(tempoGasto, "");
                 frm_Ganhar.Show();
                 pares = 0;
                 HideImages();

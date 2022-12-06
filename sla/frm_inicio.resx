@@ -172,7 +172,7 @@
     <value>549, 45</value>
   </data>
   <data name="txt_nomeUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="txt_nomeUsuario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -244,7 +244,7 @@
     <value>386, 71</value>
   </data>
   <data name="btn_comecar.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="btn_comecar.Text" xml:space="preserve">
     <value>Começar</value>
@@ -316,7 +316,7 @@
     <value>165, 49</value>
   </data>
   <data name="btn_informacoes.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btn_informacoes.Text" xml:space="preserve">
     <value>Informações</value>

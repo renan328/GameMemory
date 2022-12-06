@@ -10,7 +10,7 @@ namespace sla.DAO
 {
     class JogadorDAO
     {
-        string NomeUsuario = "Renan Rodrigues", tempo = "10";
+        string NomeJogador = "Renan Rodrigues", tempo = "10";
         public List<JogadorDTO> ListarJogadores()
         {
             var conexao = ConnectionFactory.Create();
@@ -45,7 +45,7 @@ namespace sla.DAO
 						(@nome,@tempo)";
 
             var comando = new MySqlCommand(query, conexao);
-            comando.Parameters.AddWithValue("@nome", jogador.Nome).Value = NomeUsuario;
+            comando.Parameters.AddWithValue("@nome", jogador.Nome).Value = NomeJogador;
             comando.Parameters.AddWithValue("@tempo", jogador.Tempo).Value = tempo;
 
             comando.ExecuteNonQuery();

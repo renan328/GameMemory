@@ -25,8 +25,6 @@ namespace sla
                int height
            );
 
-        readonly frm_dificil frm_Dificil = new frm_dificil();
-
         public frm_perder(int pares)
         {
             InitializeComponent();

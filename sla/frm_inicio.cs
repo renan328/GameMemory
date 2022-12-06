@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sla.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,20 +29,14 @@ namespace sla
         public frm_inicio()
         {
             InitializeComponent();
-            string NomeUsuario = txt_nomeUsuario.Text;
         }
 
         private void btn_comecar_Click(object sender, EventArgs e)
         {
-            //if (txt_nomeUsuario.Text != string.Empty)
-            //{
-                    frm_dificil formdificil = new frm_dificil();
-                    formdificil.Show();
-            //}
-            //else
-            //{
-              //  MessageBox.Show("Digite seu nome!");
-            //}
+            string Nome = txt_nomeUsuario.Text ;
+            frm_dificil formdificil = new frm_dificil(Nome);
+            formdificil.Show();
+            frm_ganhar frm_Ganhar = new frm_ganhar(0, Nome);
         }
 
         private void Frm_inicio_Load(object sender, EventArgs e)

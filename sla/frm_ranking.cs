@@ -15,8 +15,7 @@ namespace sla
     public partial class frm_ranking : Form
     {
         string NomeUsuario = "Renan Rodrigues", tempo = "10";
-        JogadorDTO jogador;
-
+        JogadorDTO jogador = new JogadorDTO();
         public frm_ranking()
         {
             InitializeComponent();
@@ -26,10 +25,6 @@ namespace sla
             JogadorDAO dao = new JogadorDAO();
             var ListaJogadores = dao.ListarJogadores();
             // var CadastraJogador = dao.CadastraJogador(jogador);
-
-
-            //MessageBox.Show($"{ListaJogadores[0].Nome}");
-            // - tempo: {ListaJogadores[0].Tempo}  - tempo: {ListaJogadores[1].Tempo}  - tempo: {ListaJogadores[2].Tempo} - tempo: {ListaJogadores[3].Tempo} - tempo: {ListaJogadores[4].Tempo}
 
             for (int i = 0; i < ListaJogadores.Count; i++)
             {

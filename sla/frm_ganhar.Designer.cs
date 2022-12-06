@@ -76,6 +76,7 @@ namespace sla
             this.brn_rank.TabIndex = 2;
             this.brn_rank.Text = "Ver Ranking";
             this.brn_rank.UseVisualStyleBackColor = false;
+            this.brn_rank.Click += new System.EventHandler(this.brn_rank_Click);
             // 
             // lbl_tempoGasto
             // 
