@@ -93,8 +93,8 @@ namespace sla
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::sla.Properties.Resources.logo;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::sla.Properties.Resources.logo;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 

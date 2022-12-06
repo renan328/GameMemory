@@ -37,10 +37,10 @@
             this.lbl_nome_usuario = new System.Windows.Forms.Label();
             this.lbl_quarto = new System.Windows.Forms.Label();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_quinto = new System.Windows.Forms.Label();
             this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,15 +126,15 @@
             this.progressBar2.Size = new System.Drawing.Size(693, 10);
             this.progressBar2.TabIndex = 9;
             // 
-            // label2
+            // lbl_quinto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 337);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 33);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "5°";
+            this.lbl_quinto.AutoSize = true;
+            this.lbl_quinto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quinto.Location = new System.Drawing.Point(35, 337);
+            this.lbl_quinto.Name = "lbl_quinto";
+            this.lbl_quinto.Size = new System.Drawing.Size(45, 33);
+            this.lbl_quinto.TabIndex = 12;
+            this.lbl_quinto.Text = "5°";
             // 
             // progressBar5
             // 
@@ -143,6 +143,15 @@
             this.progressBar5.Name = "progressBar5";
             this.progressBar5.Size = new System.Drawing.Size(693, 10);
             this.progressBar5.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(326, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "label1";
             // 
             // pictureBox1
             // 
@@ -154,22 +163,13 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(266, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
-            // 
             // frm_ranking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_quinto);
             this.Controls.Add(this.progressBar5);
             this.Controls.Add(this.lbl_quarto);
             this.Controls.Add(this.progressBar2);
@@ -183,7 +183,7 @@
             this.Controls.Add(this.progressBar1);
             this.Name = "frm_ranking";
             this.Text = "frm_ranking";
-            this.Load += new System.EventHandler(this.frm_ranking_Load);
+            this.Load += new System.EventHandler(this.Frm_ranking_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,7 +202,7 @@
         private System.Windows.Forms.Label lbl_nome_usuario;
         private System.Windows.Forms.Label lbl_quarto;
         private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_quinto;
         private System.Windows.Forms.ProgressBar progressBar5;
         private System.Windows.Forms.Label label1;
     }

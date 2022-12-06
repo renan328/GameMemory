@@ -41,7 +41,7 @@ namespace sla
             this.lbl_vcGanhou.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_vcGanhou.AutoSize = true;
             this.lbl_vcGanhou.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_vcGanhou.ForeColor = System.Drawing.Color.White;
+            this.lbl_vcGanhou.ForeColor = System.Drawing.Color.Black;
             this.lbl_vcGanhou.Location = new System.Drawing.Point(42, 21);
             this.lbl_vcGanhou.Name = "lbl_vcGanhou";
             this.lbl_vcGanhou.Size = new System.Drawing.Size(461, 73);
@@ -52,6 +52,7 @@ namespace sla
             // 
             this.btn_jogarNovamente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_jogarNovamente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
+            this.btn_jogarNovamente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_jogarNovamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_jogarNovamente.ForeColor = System.Drawing.Color.White;
             this.btn_jogarNovamente.Location = new System.Drawing.Point(117, 327);
@@ -66,6 +67,7 @@ namespace sla
             // 
             this.brn_rank.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.brn_rank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
+            this.brn_rank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.brn_rank.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brn_rank.ForeColor = System.Drawing.Color.White;
             this.brn_rank.Location = new System.Drawing.Point(117, 221);
@@ -80,7 +82,7 @@ namespace sla
             this.lbl_tempoGasto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tempoGasto.AutoSize = true;
             this.lbl_tempoGasto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tempoGasto.ForeColor = System.Drawing.Color.White;
+            this.lbl_tempoGasto.ForeColor = System.Drawing.Color.Black;
             this.lbl_tempoGasto.Location = new System.Drawing.Point(86, 128);
             this.lbl_tempoGasto.Name = "lbl_tempoGasto";
             this.lbl_tempoGasto.Size = new System.Drawing.Size(192, 31);
@@ -92,7 +94,7 @@ namespace sla
             this.lbl_tempo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tempo.AutoSize = true;
             this.lbl_tempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tempo.ForeColor = System.Drawing.Color.White;
+            this.lbl_tempo.ForeColor = System.Drawing.Color.Black;
             this.lbl_tempo.Location = new System.Drawing.Point(284, 128);
             this.lbl_tempo.Name = "lbl_tempo";
             this.lbl_tempo.Size = new System.Drawing.Size(164, 31);
@@ -103,7 +105,7 @@ namespace sla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(534, 450);
             this.ControlBox = false;
             this.Controls.Add(this.lbl_tempo);
@@ -114,6 +116,7 @@ namespace sla
             this.Name = "frm_ganhar";
             this.Text = "frm_ganhar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_ganhar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

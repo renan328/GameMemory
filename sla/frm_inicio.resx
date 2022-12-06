@@ -274,10 +274,10 @@
     <value>NoControl</value>
   </data>
   <data name="btn_sair.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 696</value>
+    <value>12, 688</value>
   </data>
   <data name="btn_sair.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 41</value>
+    <value>165, 49</value>
   </data>
   <data name="btn_sair.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -310,10 +310,10 @@
     <value>NoControl</value>
   </data>
   <data name="btn_informacoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>622, 696</value>
+    <value>623, 688</value>
   </data>
   <data name="btn_informacoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 41</value>
+    <value>165, 49</value>
   </data>
   <data name="btn_informacoes.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -332,6 +332,9 @@
   </data>
   <data name="&gt;&gt;btn_informacoes.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2908,9 +2911,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>

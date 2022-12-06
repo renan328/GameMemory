@@ -14,22 +14,48 @@ namespace sla
 {
     public partial class frm_ranking : Form
     {
+        string NomeUsuario = "Renan Rodrigues", tempo = "10";
+        JogadorDTO jogador;
+
         public frm_ranking()
         {
             InitializeComponent();
         }
-
-        JogadorDTO jogador = new JogadorDTO();
-
-        private void frm_ranking_Load(object sender, EventArgs e)
+        private void Frm_ranking_Load_1(object sender, EventArgs e)
         {
             JogadorDAO dao = new JogadorDAO();
-            var jogador = dao.ListarJogadores();
+            var ListaJogadores = dao.ListarJogadores();
+            // var CadastraJogador = dao.CadastraJogador(jogador);
 
-            foreach (var item in jogador)
+
+            //MessageBox.Show($"{ListaJogadores[0].Nome}");
+            // - tempo: {ListaJogadores[0].Tempo}  - tempo: {ListaJogadores[1].Tempo}  - tempo: {ListaJogadores[2].Tempo} - tempo: {ListaJogadores[3].Tempo} - tempo: {ListaJogadores[4].Tempo}
+
+            for (int i = 0; i < ListaJogadores.Count; i++)
             {
-                label1.Text += item.ToString();
-            };
+                if (i == 5)
+                {
+                    break;
+                }
+                switch (i)
+                {
+                    case 0:
+                        lbl_primeiro.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        break;
+                    case 1:
+                        lbl_segundo.Text = $"{ListaJogadores[i].Nome ?? ""}  - tempo: {ListaJogadores[i].Tempo}";
+                        break;
+                    case 2:
+                        lbl_terceiro.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        break;
+                    case 3:
+                        lbl_quarto.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        break;
+                    case 4:
+                        lbl_quinto.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        break;
+                }
+            }
         }
     }
 }

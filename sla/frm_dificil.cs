@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,13 +13,22 @@ namespace sla
 {
     public partial class frm_dificil : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int left,
+               int top,
+               int right,
+               int bottom,
+               int width,
+               int height
+           );
+
         bool allowClick = false;
         PictureBox firstGuess;
         Random rand = new Random();
         Timer clickTimer = new Timer();
         int tempo = 100, pares, tempoGasto;
-        Timer timer = new Timer { Interval = 100 };
-
 
         public frm_dificil()
         {
@@ -55,36 +65,6 @@ namespace sla
 
                 };
             }
-        }
-
-        private void startGameTimer()
-        {
-            timer.Start();
-            timer.Tick += delegate
-            {
-                tempo--;
-
-                if (tempo < 0)
-                {
-                    timer.Stop();
-                    frm_perder frm_Perder = new frm_perder(pares);
-                    frm_Perder.Show();
-                    this.Close();
-                    pares = 0;
-                    tempo = 0;
-                    lbl_contador.Text = "00: 00";
-                    lbl_acertos.Text = "0".ToString();
-                    ResetImages();
-
-                    foreach (PictureBox item in pictureBoxes)
-                    {
-                        item.Enabled = false;
-                    }
-                }
-
-                var ssTime = TimeSpan.FromSeconds(tempo);
-                lbl_contador.Text = "00: " + tempo.ToString();
-            };
         }
 
         private void ResetImages()
@@ -173,7 +153,6 @@ namespace sla
                 timer.Stop();
                 frm_ganhar frm_Ganhar = new frm_ganhar(tempoGasto);
                 frm_Ganhar.Show();
-                this.Close();
                 pares = 0;
                 HideImages();
                 ResetImages();
@@ -181,6 +160,37 @@ namespace sla
                 {
                     item.Enabled = false;
                 }
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            tempo--;
+
+            if (tempo < 0)
+            {
+                timer.Stop();
+                frm_perder frm_Perder = new frm_perder(pares);
+                frm_Perder.Show();
+                pares = 0;
+                tempo = 0;
+                lbl_contador.Text = "00: 00";
+                lbl_acertos.Text = "0".ToString();
+                ResetImages();
+
+                foreach (PictureBox item in pictureBoxes)
+                {
+                    item.Enabled = false;
+                }
+            }
+
+            var ssTime = TimeSpan.FromSeconds(tempo);
+            lbl_contador.Text = "00: " + tempo.ToString();
+        }
+
+        private void Frm_dificil_Load(object sender, EventArgs e)
+        {
+            btn_sair.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_sair.Width, btn_sair.Height, 30, 30));
+            btn_start.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_start.Width, btn_start.Height, 50, 50));
         }
 
         private void btn_sair_Click(object sender, EventArgs e)
@@ -199,11 +209,11 @@ namespace sla
 
         private void startGame(object sender, EventArgs e)
         {
+            timer.Start();
             tempo = 100;
             allowClick = true;
             setRandomImages();
             HideImages();
-            startGameTimer();
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             btn_start.Enabled = false;
