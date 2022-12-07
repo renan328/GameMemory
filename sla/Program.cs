@@ -16,7 +16,7 @@ namespace sla
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_inicio());
+            Application.Run(new frm_ranking());
         }
     }
 }

@@ -14,7 +14,6 @@ namespace sla
 {
     public partial class frm_ranking : Form
     {
-        string NomeUsuario = "Renan Rodrigues", tempo = "10";
         JogadorDTO jogador = new JogadorDTO();
         public frm_ranking()
         {
@@ -35,19 +34,24 @@ namespace sla
                 switch (i)
                 {
                     case 0:
-                        lbl_primeiro.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        lbl_primeiro.Text = $"{ListaJogadores[i].Nome ?? ""}";
+                        lbl_tempo1.Text = $"{ListaJogadores[i].Tempo ?? ""}s";
                         break;
                     case 1:
-                        lbl_segundo.Text = $"{ListaJogadores[i].Nome ?? ""}  - tempo: {ListaJogadores[i].Tempo}";
+                        lbl_segundo.Text = $"{ListaJogadores[i].Nome ?? ""}";
+                        lbl_tempo2.Text = $"{ListaJogadores[i].Tempo ?? ""}s";
                         break;
                     case 2:
-                        lbl_terceiro.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        lbl_terceiro.Text = $"{ListaJogadores[i].Nome ?? ""}";
+                        lbl_tempo3.Text = $"{ListaJogadores[i].Tempo ?? ""}s";
                         break;
                     case 3:
-                        lbl_quarto.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        lbl_quarto.Text = $"{ListaJogadores[i].Nome ?? ""}";
+                        lbl_tempo4.Text = $"{ListaJogadores[i].Tempo ?? ""}s";
                         break;
                     case 4:
-                        lbl_quinto.Text = $"{ListaJogadores[i].Nome ?? ""} - tempo: {ListaJogadores[i].Tempo}";
+                        lbl_quinto.Text = $"{ListaJogadores[i].Nome ?? ""}";
+                        lbl_tempo5.Text = $"{ListaJogadores[i].Tempo ?? ""}s";
                         break;
                 }
             }

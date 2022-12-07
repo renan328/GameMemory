@@ -68,7 +68,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_nomeJogador = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -537,18 +536,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.clickImage);
             // 
-            // lbl_nomeJogador
-            // 
-            this.lbl_nomeJogador.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lbl_nomeJogador.AutoSize = true;
-            this.lbl_nomeJogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nomeJogador.ForeColor = System.Drawing.Color.Black;
-            this.lbl_nomeJogador.Location = new System.Drawing.Point(55, 679);
-            this.lbl_nomeJogador.Name = "lbl_nomeJogador";
-            this.lbl_nomeJogador.Size = new System.Drawing.Size(90, 31);
-            this.lbl_nomeJogador.TabIndex = 38;
-            this.lbl_nomeJogador.Text = "Nome";
-            // 
             // frm_dificil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,7 +543,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1231, 749);
             this.ControlBox = false;
-            this.Controls.Add(this.lbl_nomeJogador);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.lbl_acertosFixo);
             this.Controls.Add(this.lbl_acertos);
@@ -677,6 +663,5 @@
         private System.Windows.Forms.Label lbl_acertos;
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label lbl_nomeJogador;
     }
 }
