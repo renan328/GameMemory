@@ -28,14 +28,14 @@ namespace sla
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_sair_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void frm_info_Load(object sender, EventArgs e)
         {
-            button1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 75, 75));
+            btn_sair.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_sair.Width, btn_sair.Height, 75, 75));
 
         }
     }

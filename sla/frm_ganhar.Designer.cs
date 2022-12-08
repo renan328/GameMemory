@@ -115,7 +115,7 @@ namespace sla
             this.Controls.Add(this.btn_jogarNovamente);
             this.Controls.Add(this.lbl_vcGanhou);
             this.Name = "frm_ganhar";
-            this.Text = "frm_ganhar";
+            this.Text = "Você ganhou!";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_ganhar_Load);
             this.ResumeLayout(false);

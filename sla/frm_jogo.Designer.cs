@@ -1,6 +1,6 @@
 ﻿namespace sla
 {
-    partial class frm_dificil
+    partial class frm_jogo
     {
         /// <summary>
         /// Required designer variable.
@@ -69,6 +69,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -183,7 +184,6 @@
             // 
             // timer
             // 
-            this.timer.Interval = 10000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // lbl_nomeJogador
@@ -192,7 +192,7 @@
             this.lbl_nomeJogador.AutoSize = true;
             this.lbl_nomeJogador.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nomeJogador.ForeColor = System.Drawing.Color.Black;
-            this.lbl_nomeJogador.Location = new System.Drawing.Point(55, 670);
+            this.lbl_nomeJogador.Location = new System.Drawing.Point(149, 681);
             this.lbl_nomeJogador.Name = "lbl_nomeJogador";
             this.lbl_nomeJogador.Size = new System.Drawing.Size(87, 35);
             this.lbl_nomeJogador.TabIndex = 38;
@@ -550,13 +550,26 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.clickImage);
             // 
-            // frm_dificil
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(55, 681);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 35);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Nome:";
+            // 
+            // frm_jogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1231, 749);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_nomeJogador);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.lbl_acertosFixo);
@@ -596,10 +609,10 @@
             this.Controls.Add(this.lbl_tempo);
             this.Controls.Add(this.lbl_contador);
             this.Controls.Add(this.btn_start);
-            this.Name = "frm_dificil";
-            this.Text = "frm_dificil";
+            this.Name = "frm_jogo";
+            this.Text = "Jogo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Frm_dificil_Load);
+            this.Load += new System.EventHandler(this.Frm_jogo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
@@ -679,5 +692,6 @@
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label lbl_nomeJogador;
+        private System.Windows.Forms.Label label1;
     }
 }

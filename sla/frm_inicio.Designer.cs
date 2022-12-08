@@ -37,6 +37,7 @@ namespace sla
             this.btn_sair = new System.Windows.Forms.Button();
             this.btn_informacoes = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_rank = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +99,22 @@ namespace sla
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // btn_rank
+            // 
+            resources.ApplyResources(this.btn_rank, "btn_rank");
+            this.btn_rank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
+            this.btn_rank.FlatAppearance.BorderSize = 0;
+            this.btn_rank.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_rank.Name = "btn_rank";
+            this.btn_rank.UseVisualStyleBackColor = false;
+            this.btn_rank.Click += new System.EventHandler(this.btn_rank_Click);
+            // 
             // frm_inicio
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_rank);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_informacoes);
             this.Controls.Add(this.btn_sair);
@@ -129,5 +141,6 @@ namespace sla
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Button btn_informacoes;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_rank;
     }
 }

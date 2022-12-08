@@ -32,7 +32,6 @@
             this.lbl_primeiro = new System.Windows.Forms.Label();
             this.lbl_segundo = new System.Windows.Forms.Label();
             this.lbl_terceiro = new System.Windows.Forms.Label();
-            this.lbl_nome_usuario = new System.Windows.Forms.Label();
             this.lbl_quarto = new System.Windows.Forms.Label();
             this.lbl_quinto = new System.Windows.Forms.Label();
             this.lbl_tempo2 = new System.Windows.Forms.Label();
@@ -50,7 +49,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_voltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -61,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_primeiro
@@ -96,16 +94,6 @@
             this.lbl_terceiro.Size = new System.Drawing.Size(121, 42);
             this.lbl_terceiro.TabIndex = 6;
             this.lbl_terceiro.Text = "Nome";
-            // 
-            // lbl_nome_usuario
-            // 
-            this.lbl_nome_usuario.AutoSize = true;
-            this.lbl_nome_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nome_usuario.Location = new System.Drawing.Point(47, 9);
-            this.lbl_nome_usuario.Name = "lbl_nome_usuario";
-            this.lbl_nome_usuario.Size = new System.Drawing.Size(90, 31);
-            this.lbl_nome_usuario.TabIndex = 8;
-            this.lbl_nome_usuario.Text = "Nome";
             // 
             // lbl_quarto
             // 
@@ -299,15 +287,20 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // btn_voltar
             // 
-            this.pictureBox1.Image = global::sla.Properties.Resources.images_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.btn_voltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_voltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
+            this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_voltar.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.ForeColor = System.Drawing.Color.White;
+            this.btn_voltar.Location = new System.Drawing.Point(985, 660);
+            this.btn_voltar.Name = "btn_voltar";
+            this.btn_voltar.Size = new System.Drawing.Size(151, 49);
+            this.btn_voltar.TabIndex = 32;
+            this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.UseVisualStyleBackColor = false;
+            this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // frm_ranking
             // 
@@ -315,6 +308,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1148, 721);
+            this.Controls.Add(this.btn_voltar);
             this.Controls.Add(this.lbl_tempo5);
             this.Controls.Add(this.lbl_tempo3);
             this.Controls.Add(this.lbl_tempo4);
@@ -332,13 +326,11 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbl_quinto);
             this.Controls.Add(this.lbl_quarto);
-            this.Controls.Add(this.lbl_nome_usuario);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_terceiro);
             this.Controls.Add(this.lbl_segundo);
             this.Controls.Add(this.lbl_primeiro);
             this.Name = "frm_ranking";
-            this.Text = "frm_ranking";
+            this.Text = "Ranking";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_ranking_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -351,7 +343,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,8 +352,6 @@
         private System.Windows.Forms.Label lbl_primeiro;
         private System.Windows.Forms.Label lbl_segundo;
         private System.Windows.Forms.Label lbl_terceiro;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbl_nome_usuario;
         private System.Windows.Forms.Label lbl_quarto;
         private System.Windows.Forms.Label lbl_quinto;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -380,5 +369,6 @@
         private System.Windows.Forms.Label lbl_tempo4;
         private System.Windows.Forms.Label lbl_tempo3;
         private System.Windows.Forms.Label lbl_tempo5;
+        private System.Windows.Forms.Button btn_voltar;
     }
 }

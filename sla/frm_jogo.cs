@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace sla
 {
-    public partial class frm_dificil : Form
+    public partial class frm_jogo : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -33,7 +33,7 @@ namespace sla
         string Nome;
 
        
-        public frm_dificil(string Nome)
+        public frm_jogo(string Nome)
         {
             InitializeComponent();
             this.Nome = Nome;
@@ -192,7 +192,7 @@ namespace sla
             lbl_contador.Text = "00: " + tempo.ToString();
         }
 
-        private void Frm_dificil_Load(object sender, EventArgs e)
+        private void Frm_jogo_Load(object sender, EventArgs e)
         {
             btn_sair.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_sair.Width, btn_sair.Height, 30, 30));
             btn_start.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_start.Width, btn_start.Height, 50, 50));

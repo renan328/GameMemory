@@ -113,7 +113,7 @@
             this.Controls.Add(this.lbl_paresEncontrados);
             this.Controls.Add(this.lbl_titulo);
             this.Name = "frm_perder";
-            this.Text = "frm_perder";
+            this.Text = "Você perdeu!";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_perder_Load);
             this.ResumeLayout(false);

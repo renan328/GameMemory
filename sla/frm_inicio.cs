@@ -34,16 +34,15 @@ namespace sla
         private void btn_comecar_Click(object sender, EventArgs e)
         {
             string Nome = txt_nomeUsuario.Text;
-            frm_dificil formdificil = new frm_dificil(Nome);
+            frm_jogo formjogo = new frm_jogo(Nome);
 
             if (Nome == string.Empty)
             {
-                MessageBox.Show("Insira seu nome", "coloca o nome bb", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Insira seu nome", "Coloque seu nome", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                MessageBox.Show("Vamos começar, " + Nome + "!", "Boa sorte", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                formdificil.Show();
+                formjogo.Show();
             }
 
 
@@ -56,6 +55,7 @@ namespace sla
             txt_nomeUsuario.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, txt_nomeUsuario.Width, txt_nomeUsuario.Height, 30, 30));
             btn_sair.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_sair.Width, btn_sair.Height, 30, 30));
             btn_informacoes.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_informacoes.Width, btn_informacoes.Height, 30, 30));
+            btn_rank.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_rank.Width, btn_rank.Height, 30, 30));
         }
 
         private void btn_informacoes_Click(object sender, EventArgs e)
@@ -67,6 +67,12 @@ namespace sla
         private void Btn_sair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_rank_Click(object sender, EventArgs e)
+        {
+            frm_ranking frm_Ranking = new frm_ranking();
+            frm_Ranking.Show();
         }
     }
 }

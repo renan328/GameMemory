@@ -35,7 +35,7 @@ namespace sla
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_sair = new System.Windows.Forms.Button();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.pic_imagem_descontraida = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_imagem_descontraida)).BeginInit();
@@ -123,21 +123,21 @@ namespace sla
             this.label6.Text = "Caso ganhar ou perder";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btn_sair
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btn_sair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 566);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1130, 80);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Voltar ao menu";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_sair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
+            this.btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sair.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sair.ForeColor = System.Drawing.Color.White;
+            this.btn_sair.Location = new System.Drawing.Point(12, 566);
+            this.btn_sair.Name = "btn_sair";
+            this.btn_sair.Size = new System.Drawing.Size(1130, 80);
+            this.btn_sair.TabIndex = 6;
+            this.btn_sair.Text = "Voltar ao menu";
+            this.btn_sair.UseVisualStyleBackColor = false;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
             // pic_imagem_descontraida
             // 
@@ -158,7 +158,7 @@ namespace sla
             this.ClientSize = new System.Drawing.Size(1154, 658);
             this.ControlBox = false;
             this.Controls.Add(this.pic_imagem_descontraida);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -182,7 +182,7 @@ namespace sla
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.PictureBox pic_imagem_descontraida;
     }

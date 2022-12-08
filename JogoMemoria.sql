@@ -1,15 +1,10 @@
-create database JogoMemoria;
-use JogoMemoria;
+CREATE DATABASE JogoMemoria;
+USE JogoMemoria;
 
-create table jogador(
-	id int not null auto_increment primary key,
-    nome varchar(255) not null,
-    tempo int not null
+CREATE TABLE jogador(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    tempo INT
 );
 
-insert into jogador values (default, "Lucas", 10);
-insert into jogador values (default, "Renan", 11);
-insert into jogador values (default, "Marcos", 12);
-insert into jogador values (default, "Marcos 2", 13);
-
-select * from jogador order by tempo desc;
+SELECT * FROM jogador ORDER BY tempo ASC;

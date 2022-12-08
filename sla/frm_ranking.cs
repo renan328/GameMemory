@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +15,16 @@ namespace sla
 {
     public partial class frm_ranking : Form
     {
-        
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        public static extern IntPtr CreateRoundRectRgn
+           (
+               int left,
+               int top,
+               int right,
+               int bottom,
+               int width,
+               int height
+           );
         public frm_ranking()
         {
             InitializeComponent();
@@ -22,6 +32,10 @@ namespace sla
         }
         private void Frm_ranking_Load_1(object sender, EventArgs e)
         {
+            btn_voltar.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_voltar.Width, btn_voltar.Height, 30, 30));
+
+
+
             JogadorDAO dao = new JogadorDAO();
             var ListaJogadores = dao.ListarJogadores();
 
@@ -55,6 +69,11 @@ namespace sla
                         break;
                 }
             }
+        }
+
+        private void btn_voltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
