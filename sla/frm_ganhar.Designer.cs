@@ -40,11 +40,11 @@ namespace sla
             // 
             this.lbl_vcGanhou.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_vcGanhou.AutoSize = true;
-            this.lbl_vcGanhou.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_vcGanhou.Font = new System.Drawing.Font("Trebuchet MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_vcGanhou.ForeColor = System.Drawing.Color.Black;
             this.lbl_vcGanhou.Location = new System.Drawing.Point(42, 21);
             this.lbl_vcGanhou.Name = "lbl_vcGanhou";
-            this.lbl_vcGanhou.Size = new System.Drawing.Size(461, 73);
+            this.lbl_vcGanhou.Size = new System.Drawing.Size(460, 81);
             this.lbl_vcGanhou.TabIndex = 0;
             this.lbl_vcGanhou.Text = "Você ganhou!!";
             // 
@@ -53,7 +53,7 @@ namespace sla
             this.btn_jogarNovamente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_jogarNovamente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.btn_jogarNovamente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_jogarNovamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_jogarNovamente.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_jogarNovamente.ForeColor = System.Drawing.Color.White;
             this.btn_jogarNovamente.Location = new System.Drawing.Point(117, 327);
             this.btn_jogarNovamente.Name = "btn_jogarNovamente";
@@ -68,7 +68,7 @@ namespace sla
             this.brn_rank.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.brn_rank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.brn_rank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brn_rank.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brn_rank.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brn_rank.ForeColor = System.Drawing.Color.White;
             this.brn_rank.Location = new System.Drawing.Point(117, 221);
             this.brn_rank.Name = "brn_rank";
@@ -82,11 +82,11 @@ namespace sla
             // 
             this.lbl_tempoGasto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tempoGasto.AutoSize = true;
-            this.lbl_tempoGasto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tempoGasto.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tempoGasto.ForeColor = System.Drawing.Color.Black;
             this.lbl_tempoGasto.Location = new System.Drawing.Point(86, 128);
             this.lbl_tempoGasto.Name = "lbl_tempoGasto";
-            this.lbl_tempoGasto.Size = new System.Drawing.Size(192, 31);
+            this.lbl_tempoGasto.Size = new System.Drawing.Size(183, 35);
             this.lbl_tempoGasto.TabIndex = 3;
             this.lbl_tempoGasto.Text = "Tempo gasto:";
             // 
@@ -94,11 +94,11 @@ namespace sla
             // 
             this.lbl_tempo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tempo.AutoSize = true;
-            this.lbl_tempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tempo.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tempo.ForeColor = System.Drawing.Color.Black;
             this.lbl_tempo.Location = new System.Drawing.Point(284, 128);
             this.lbl_tempo.Name = "lbl_tempo";
-            this.lbl_tempo.Size = new System.Drawing.Size(164, 31);
+            this.lbl_tempo.Size = new System.Drawing.Size(156, 35);
             this.lbl_tempo.TabIndex = 4;
             this.lbl_tempo.Text = "0 segundos";
             // 

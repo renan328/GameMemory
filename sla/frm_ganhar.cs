@@ -1,4 +1,5 @@
-﻿using sla.DTO;
+﻿using sla.DAO;
+using sla.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,8 +34,8 @@ namespace sla
             lbl_tempo.Text = tempoGasto + " segundos";
             jogador.Nome = Nome;
             jogador.Tempo = tempoGasto.ToString();
-
-            MessageBox.Show(jogador.Nome);
+            JogadorDAO jogadordao = new JogadorDAO();
+            jogadordao.CadastraJogador(jogador);
 
         }
 
@@ -52,7 +53,7 @@ namespace sla
         private void brn_rank_Click(object sender, EventArgs e)
         {
             frm_ranking frm_Ranking = new frm_ranking();
-            frm_Ranking.Show();
+            frm_Ranking.ShowDialog();
         }
     }
 }

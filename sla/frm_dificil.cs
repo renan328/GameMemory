@@ -156,7 +156,7 @@ namespace sla
             
                 pares = 0;
                 timer.Stop();
-                frm_ganhar frm_Ganhar = new frm_ganhar(tempoGasto, "");
+                frm_ganhar frm_Ganhar = new frm_ganhar(tempoGasto, Nome);
                 frm_Ganhar.Show();
                 pares = 0;
                 HideImages();

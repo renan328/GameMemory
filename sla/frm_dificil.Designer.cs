@@ -36,6 +36,7 @@
             this.lbl_acertos = new System.Windows.Forms.Label();
             this.btn_sair = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.lbl_nomeJogador = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -107,7 +108,7 @@
             this.btn_start.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_start.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_start.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_start.ForeColor = System.Drawing.Color.White;
             this.btn_start.Location = new System.Drawing.Point(330, 30);
             this.btn_start.Name = "btn_start";
@@ -121,23 +122,23 @@
             // 
             this.lbl_contador.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_contador.AutoSize = true;
-            this.lbl_contador.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_contador.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_contador.ForeColor = System.Drawing.Color.Black;
             this.lbl_contador.Location = new System.Drawing.Point(684, 37);
             this.lbl_contador.Name = "lbl_contador";
-            this.lbl_contador.Size = new System.Drawing.Size(138, 39);
+            this.lbl_contador.Size = new System.Drawing.Size(97, 43);
             this.lbl_contador.TabIndex = 1;
-            this.lbl_contador.Text = "00: 100";
+            this.lbl_contador.Text = "100s";
             // 
             // lbl_tempo
             // 
             this.lbl_tempo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_tempo.AutoSize = true;
-            this.lbl_tempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tempo.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tempo.ForeColor = System.Drawing.Color.Black;
             this.lbl_tempo.Location = new System.Drawing.Point(548, 36);
             this.lbl_tempo.Name = "lbl_tempo";
-            this.lbl_tempo.Size = new System.Drawing.Size(130, 39);
+            this.lbl_tempo.Size = new System.Drawing.Size(126, 43);
             this.lbl_tempo.TabIndex = 2;
             this.lbl_tempo.Text = "Tempo";
             // 
@@ -145,11 +146,11 @@
             // 
             this.lbl_acertosFixo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbl_acertosFixo.AutoSize = true;
-            this.lbl_acertosFixo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_acertosFixo.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_acertosFixo.ForeColor = System.Drawing.Color.Black;
             this.lbl_acertosFixo.Location = new System.Drawing.Point(346, 673);
             this.lbl_acertosFixo.Name = "lbl_acertosFixo";
-            this.lbl_acertosFixo.Size = new System.Drawing.Size(325, 39);
+            this.lbl_acertosFixo.Size = new System.Drawing.Size(320, 43);
             this.lbl_acertosFixo.TabIndex = 36;
             this.lbl_acertosFixo.Text = "Pares encontrados";
             // 
@@ -157,11 +158,11 @@
             // 
             this.lbl_acertos.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbl_acertos.AutoSize = true;
-            this.lbl_acertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_acertos.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_acertos.ForeColor = System.Drawing.Color.Black;
             this.lbl_acertos.Location = new System.Drawing.Point(686, 673);
             this.lbl_acertos.Name = "lbl_acertos";
-            this.lbl_acertos.Size = new System.Drawing.Size(108, 39);
+            this.lbl_acertos.Size = new System.Drawing.Size(118, 43);
             this.lbl_acertos.TabIndex = 35;
             this.lbl_acertos.Text = "0  /16";
             // 
@@ -170,19 +171,32 @@
             this.btn_sair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_sair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sair.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sair.ForeColor = System.Drawing.Color.White;
             this.btn_sair.Location = new System.Drawing.Point(1028, 670);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(191, 57);
             this.btn_sair.TabIndex = 37;
-            this.btn_sair.Text = "<- Terminar";
+            this.btn_sair.Text = "Terminar";
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
             // timer
             // 
+            this.timer.Interval = 10000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // lbl_nomeJogador
+            // 
+            this.lbl_nomeJogador.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbl_nomeJogador.AutoSize = true;
+            this.lbl_nomeJogador.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nomeJogador.ForeColor = System.Drawing.Color.Black;
+            this.lbl_nomeJogador.Location = new System.Drawing.Point(55, 670);
+            this.lbl_nomeJogador.Name = "lbl_nomeJogador";
+            this.lbl_nomeJogador.Size = new System.Drawing.Size(87, 35);
+            this.lbl_nomeJogador.TabIndex = 38;
+            this.lbl_nomeJogador.Text = "Nome";
             // 
             // pictureBox17
             // 
@@ -543,6 +557,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1231, 749);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_nomeJogador);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.lbl_acertosFixo);
             this.Controls.Add(this.lbl_acertos);
@@ -663,5 +678,6 @@
         private System.Windows.Forms.Label lbl_acertos;
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label lbl_nomeJogador;
     }
 }

@@ -39,10 +39,10 @@
             // 
             this.lbl_titulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Font = new System.Drawing.Font("Trebuchet MS", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titulo.Location = new System.Drawing.Point(81, 29);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(625, 108);
+            this.lbl_titulo.Size = new System.Drawing.Size(646, 119);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Você perdeu!";
             // 
@@ -50,11 +50,11 @@
             // 
             this.lbl_pares.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pares.AutoSize = true;
-            this.lbl_pares.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pares.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pares.ForeColor = System.Drawing.Color.Black;
-            this.lbl_pares.Location = new System.Drawing.Point(522, 150);
+            this.lbl_pares.Location = new System.Drawing.Point(493, 150);
             this.lbl_pares.Name = "lbl_pares";
-            this.lbl_pares.Size = new System.Drawing.Size(30, 31);
+            this.lbl_pares.Size = new System.Drawing.Size(31, 35);
             this.lbl_pares.TabIndex = 6;
             this.lbl_pares.Text = "0";
             // 
@@ -62,11 +62,11 @@
             // 
             this.lbl_paresEncontrados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_paresEncontrados.AutoSize = true;
-            this.lbl_paresEncontrados.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_paresEncontrados.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_paresEncontrados.ForeColor = System.Drawing.Color.Black;
             this.lbl_paresEncontrados.Location = new System.Drawing.Point(240, 150);
             this.lbl_paresEncontrados.Name = "lbl_paresEncontrados";
-            this.lbl_paresEncontrados.Size = new System.Drawing.Size(276, 31);
+            this.lbl_paresEncontrados.Size = new System.Drawing.Size(266, 35);
             this.lbl_paresEncontrados.TabIndex = 5;
             this.lbl_paresEncontrados.Text = "Pares encontrados: ";
             // 
@@ -76,7 +76,7 @@
             this.brn_rank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.brn_rank.FlatAppearance.BorderSize = 0;
             this.brn_rank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brn_rank.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brn_rank.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brn_rank.ForeColor = System.Drawing.Color.Transparent;
             this.brn_rank.Location = new System.Drawing.Point(246, 224);
             this.brn_rank.Name = "brn_rank";
@@ -92,7 +92,7 @@
             this.btn_jogarNovamente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(0)))), ((int)(((byte)(174)))));
             this.btn_jogarNovamente.FlatAppearance.BorderSize = 0;
             this.btn_jogarNovamente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_jogarNovamente.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_jogarNovamente.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_jogarNovamente.ForeColor = System.Drawing.Color.White;
             this.btn_jogarNovamente.Location = new System.Drawing.Point(246, 338);
             this.btn_jogarNovamente.Name = "btn_jogarNovamente";

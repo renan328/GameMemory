@@ -14,16 +14,16 @@ namespace sla
 {
     public partial class frm_ranking : Form
     {
-        JogadorDTO jogador = new JogadorDTO();
+        
         public frm_ranking()
         {
             InitializeComponent();
+
         }
         private void Frm_ranking_Load_1(object sender, EventArgs e)
         {
             JogadorDAO dao = new JogadorDAO();
             var ListaJogadores = dao.ListarJogadores();
-            // var CadastraJogador = dao.CadastraJogador(jogador);
 
             for (int i = 0; i < ListaJogadores.Count; i++)
             {

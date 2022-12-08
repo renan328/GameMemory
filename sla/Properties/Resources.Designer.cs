@@ -183,6 +183,26 @@ namespace sla.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FLO3WAhWUAQXpjN_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("FLO3WAhWUAQXpjN-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FLO3WAhWUAQXpjN_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("FLO3WAhWUAQXpjN-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap galinha {
             get {
                 object obj = ResourceManager.GetObject("galinha", resourceCulture);
